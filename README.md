@@ -6,4 +6,4 @@ First version of best practice pipeline for use of graph genomes in microbial ge
 3) mapping short reads to graph, get Gam files
 4) call variant using the Gam files either using genotying or including novel variants. 
 
-The variants called from graph based gam files can be used for further standard analysis as variants called agaist single linear refs.
+The variants called from graph based gam files can be used for further standard analysis as variants called from single linear reference.

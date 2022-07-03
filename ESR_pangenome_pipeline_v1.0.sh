@@ -11,14 +11,14 @@
 #software and versions using in the this pipeline 
 # Mash version 2.1  to calculate the distance for the genomes, which can be used as a guide for the similary -p for building the Pangenome graph
 # pggb version 0.3.0 for pangenome graph building  https://github.com/pangenome/pggb  Erik's team is keeping improve pggb  
-# pgge 
+# pgge https://github.com/pangenome/pgge 
 # odgi version 0.6.2 provides a set of tools ranging from graph building, manipulation, layouting, over graph statistics to graph visualization and gene annotation lift overs
 # https://github.com/pangenome/odgi
 # vg version 1.37.0  provides computational methods for creating and manipulating of genome variation graphs. It's pangenome representation of a set of genomes overcomes reference bias and improves read mapping.
 # circlator version 1.5.5
 # samtools version 1.9
 
-# as our admin installed all those tools as singulary on our server
+# as our admin installed all those tools as singularity on our server
 # so load module that needed to be use 
 
 module load mash/2.1 
@@ -44,7 +44,7 @@ samtools faidx samples.fa
 mash triangle [options] <seq1> [<seq2>] ...
 
 
-#my following example contains four genomes which are NC_017518 NMI01191_mut_indel200Inv2 NMI97349_mut_indel200Inv2 NC_017518_5KSNPs_indels200Inv2i, names as 4Sim 
+#my following example contains four genomes which are NC_017518 NMI01191_mut_indel200Inv2 NMI97349_mut_indel200Inv2 NC_017518_5KSNPs_indels200Inv2i, named as 4Sim 
 
 #Building the pangenome graph
 # -s segment length for mapping 
@@ -74,6 +74,15 @@ pgge -g $input_path/4Sim_50K0.95.smooth.fix.gfa -f $input_path/4Sim.fa -o $outpu
 #annotation
 #gfaestus, also uses BED and GFF3 files against the paths in the graph
 #https://github.com/chfi/gfaestus
+#once you got gfaestus installed 
+#Use gfaestus to view graph in 2D, go to the gfaestus folder
+./gfaestus ./${x}.gfa
+#load bed file of annotation 
+
+
+#visulizatio a specific region using odgi
+odgi viz -i 4Sim_50K0.95.smooth.fix.gfa -r NC_017518:50000-1000000  -o test_range.png
+
 
 #deconstruct the graph for paths to get variants among the paths
 
@@ -85,8 +94,7 @@ odgi sort -i 4Sim_50K0.95.smooth.fix.gfa -o - -p Ygs -P | odgi view -i - -g >4Si
 
 #convert the graph into 256 bp chunks
 vg mod -X 256 4Sim_50k0.95_sorted_graph.gfa > 4Sim_50k0.95_sorted_graph_256.vg
-
-$vg index -t 48 -x 4Sim_50k0.95_sorted_graph_256.xg -g 4Sim_50k0.95_sorted_graph_256.gcsa -k 16 4Sim_50k0.95_sorted_graph_256.vg
+vg index -t 48 -x 4Sim_50k0.95_sorted_graph_256.xg -g 4Sim_50k0.95_sorted_graph_256.gcsa -k 16 4Sim_50k0.95_sorted_graph_256.vg
 
 
 #map NGS short reads to Graph

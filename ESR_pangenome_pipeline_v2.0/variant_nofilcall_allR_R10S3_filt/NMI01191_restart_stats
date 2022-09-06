@@ -1,0 +1,5 @@
+NMI01191_restart PASS
+9945 NMI01191_restartnofilt_aug_allR.pack_PASS.vcf
+NMI01191_restart PASS GT11
+9548 NMI01191_restartnofilt_aug_allR.pack_PASS_nohead_GT11.vcf
+397 NMI01191_restartnofilt_aug_allR.pack_GTerror.vcf

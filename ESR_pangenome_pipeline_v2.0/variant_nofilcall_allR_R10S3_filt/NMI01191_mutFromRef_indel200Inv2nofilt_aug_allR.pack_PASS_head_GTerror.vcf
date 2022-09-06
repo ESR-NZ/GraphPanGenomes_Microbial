@@ -1,0 +1,22 @@
+##fileformat=VCFv4.2
+##contig=<ID=NC_neisseria,length=2248966>
+##contig=<ID=Sim1_3k,length=2249014>
+##contig=<ID=Sim2_4k,length=2248965>
+##contig=<ID=Sim3_5k,length=2249050>
+##INFO=<ID=AT,Number=R,Type=String,Description="Allele Traversal as path in graph">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##FORMAT=<ID=AD,Number=.,Type=Integer,Description="Allelic depths for the ref and alt alleles in the order listed">
+##FORMAT=<ID=MAD,Number=1,Type=Integer,Description="Minimum site allele depth">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality, the Phred-scaled probability estimate of the called genotype">
+##FORMAT=<ID=GP,Number=1,Type=Float,Description="Genotype Probability, the log-scaled posterior probability of the called genotype">
+##FORMAT=<ID=XD,Number=1,Type=Float,Description="eXpected Depth, background coverage as used for the Poisson model">
+##FILTER=<ID=lowad,Description="Variant does not meet minimum allele read support threshold of 3">
+##FILTER=<ID=lowdepth,Description="Variant has read depth less than 10">
+##FILTER=<ID=PASS,Description="All filters passed">
+##SAMPLE=<ID=SAMPLE>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE
+NC_neisseria	1899989	>772052>1569839	T	G	10.5886	PASS	AT=>772052>30971>30972>1569839,>772052>30970>30972>1569839;DP=24	GT:DP:AD:GL:GQ:GP:XD:MAD	0/1:24:21,3:-5.552838,-5.103034,-45.843684:4:-1.913221:21.920000:3	NC_neisseria	1899989	0/1
+NC_neisseria	2132803	>1442584>1442586	C	A	2697.45	PASS	AT=>1442584>1442585>1442586,>1442584>1664472>1442586;DP=162	GT:DP:AD:GL:GQ:GP:XD:MAD	1/0:162:24,138:-292.177284,-22.909135,-30.483553:75:-1.098612:139.588242:24	NC_neisseria	2132803	1/0

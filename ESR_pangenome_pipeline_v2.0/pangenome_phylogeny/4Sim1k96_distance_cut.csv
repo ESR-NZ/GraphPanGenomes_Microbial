@@ -1,0 +1,17 @@
+path.a,path.b,jaccard
+Sim1_3k,Sim3_5k,2.37779e-08
+Sim3_5k,Sim3_5k,1.19356e-08
+Sim3_5k,NC_neisseria,2.38135e-08
+NC_neisseria,Sim2_4k,0.995843
+Sim2_4k,Sim1_3k,0.996402
+Sim1_3k,Sim1_3k,1
+NC_neisseria,Sim1_3k,0.996992
+Sim1_3k,Sim2_4k,0.996402
+Sim3_5k,Sim2_4k,2.37639e-08
+Sim2_4k,Sim2_4k,1
+NC_neisseria,Sim3_5k,2.38135e-08
+Sim1_3k,NC_neisseria,0.996992
+Sim3_5k,Sim1_3k,2.37779e-08
+Sim2_4k,NC_neisseria,0.995843
+Sim2_4k,Sim3_5k,2.37639e-08
+NC_neisseria,NC_neisseria,1

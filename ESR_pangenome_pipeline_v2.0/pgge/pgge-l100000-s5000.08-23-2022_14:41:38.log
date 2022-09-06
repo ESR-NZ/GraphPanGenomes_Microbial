@@ -1,0 +1,95 @@
+Starting pgge on Tue Aug 23 14:41:38 NZST 2022
+
+Command: /usr/local/bin/pgge -g 4Sim.1k96.gfa -f /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim.fa -o /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge -r /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pgge/scripts/beehave.R -b /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge_4Sim1k96_peanut_bed -l 100000 -s 5000 -t 16
+
+PARAMETERS
+
+evaluation:
+  input-gfa:          4Sim.1k96.gfa
+  input-fasta:        /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim.fa
+  output-dir:         /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge
+  beehave-r:          /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pgge/scripts/beehave.R
+  peanut-bed:         true
+  input-graph-names:  false
+splitfa:
+  seq-length:         100000
+  step:               5000
+evaluation-gaf-mode:
+  input-gaf:          false
+general:
+  threads:            16
+
+Running pgge
+
+samtools faidx /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim.fa NC_neisseria
+0.01s user 0.07s system 34% cpu 0.25s total 3628Kb max memory
+samtools faidx /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim.fa Sim1_3k
+0.01s user 0.00s system 79% cpu 0.03s total 3628Kb max memory
+samtools faidx /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim.fa Sim2_4k
+0.01s user 0.00s system 77% cpu 0.02s total 3624Kb max memory
+samtools faidx /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim.fa Sim3_5k
+0.01s user 0.00s system 78% cpu 0.02s total 3624Kb max memory
+splitfa /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.NC_neisseria.4Sim.fa -l 100000 -s 5000
+0.00s user 0.08s system 46% cpu 0.19s total 7872Kb max memory
+splitfa /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim1_3k.4Sim.fa -l 100000 -s 5000
+0.00s user 0.06s system 55% cpu 0.13s total 7872Kb max memory
+splitfa /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim2_4k.4Sim.fa -l 100000 -s 5000
+0.00s user 0.06s system 53% cpu 0.13s total 7868Kb max memory
+splitfa /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim3_5k.4Sim.fa -l 100000 -s 5000
+0.00s user 0.05s system 51% cpu 0.12s total 7872Kb max memory
+GraphAligner bioconda 1.0.13-
+GraphAligner -g 4Sim.1k96.gfa -f /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.NC_neisseria.4Sim.fa.splitfa.fa -a /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.NC_neisseria.4Sim.1k96.gfa.gaf -x dbg --precise-clipping 0.501 -t 16
+27.88s user 0.92s system 1111% cpu 2.59s total 340412Kb max memory
+cut -f 2,3,4,16 /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.NC_neisseria.4Sim.1k96.gfa.gaf
+0.01s user 0.00s system 85% cpu 0.01s total 632Kb max memory
+peanut -g /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.NC_neisseria.4Sim.1k96.gfa.gaf -b /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.NC_neisseria.4Sim.1k96.gfa.bed
+0.24s user 0.03s system 76% cpu 0.35s total 2700Kb max memory
+GraphAligner bioconda 1.0.13-
+GraphAligner -g 4Sim.1k96.gfa -f /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim1_3k.4Sim.fa.splitfa.fa -a /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim1_3k.4Sim.1k96.gfa.gaf -x dbg --precise-clipping 0.501 -t 16
+28.38s user 0.91s system 1200% cpu 2.44s total 338332Kb max memory
+cut -f 2,3,4,16 /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim1_3k.4Sim.1k96.gfa.gaf
+0.01s user 0.00s system 92% cpu 0.01s total 636Kb max memory
+peanut -g /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim1_3k.4Sim.1k96.gfa.gaf -b /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim1_3k.4Sim.1k96.gfa.bed
+0.24s user 0.00s system 98% cpu 0.25s total 2668Kb max memory
+GraphAligner bioconda 1.0.13-
+GraphAligner -g 4Sim.1k96.gfa -f /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim2_4k.4Sim.fa.splitfa.fa -a /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim2_4k.4Sim.1k96.gfa.gaf -x dbg --precise-clipping 0.501 -t 16
+28.39s user 0.87s system 1205% cpu 2.42s total 342568Kb max memory
+cut -f 2,3,4,16 /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim2_4k.4Sim.1k96.gfa.gaf
+0.00s user 0.00s system 85% cpu 0.01s total 636Kb max memory
+peanut -g /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim2_4k.4Sim.1k96.gfa.gaf -b /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim2_4k.4Sim.1k96.gfa.bed
+0.24s user 0.00s system 98% cpu 0.25s total 2668Kb max memory
+GraphAligner bioconda 1.0.13-
+GraphAligner -g 4Sim.1k96.gfa -f /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim3_5k.4Sim.fa.splitfa.fa -a /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim3_5k.4Sim.1k96.gfa.gaf -x dbg --precise-clipping 0.501 -t 16
+28.17s user 0.95s system 1194% cpu 2.43s total 336204Kb max memory
+cut -f 2,3,4,16 /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim3_5k.4Sim.1k96.gfa.gaf
+0.01s user 0.00s system 92% cpu 0.01s total 636Kb max memory
+peanut -g /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim3_5k.4Sim.1k96.gfa.gaf -b /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.Sim3_5k.4Sim.1k96.gfa.bed
+0.24s user 0.00s system 98% cpu 0.25s total 2584Kb max memory
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+Loading required package: tidyverse
+-- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+v ggplot2 3.3.3     v purrr   0.3.4
+v tibble  3.1.0     v dplyr   1.0.5
+v tidyr   1.1.3     v stringr 1.4.0
+v readr   1.4.0     v forcats 0.5.1
+-- Conflicts ------------------------------------------ tidyverse_conflicts() --
+x dplyr::filter() masks stats::filter()
+x dplyr::lag()    masks stats::lag()
+Loading required package: ggrepel
+Loading required package: gridExtra
+
+Attaching package: 'gridExtra'
+
+The following object is masked from 'package:dplyr':
+
+    combine
+
+Rscript /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pgge/scripts/beehave.R /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.pgge.tsv /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge/pgge-l100000-s5000.pgge.tsv.png
+5.16s user 7.10s system 186% cpu 6.58s total 178916Kb max memory

@@ -1,0 +1,32 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=6;
+TAXLABELS
+[1] 'Sim4_5k_6k'
+[2] 'Sim2_3k_6k'
+[3] 'NMI01191_6k'
+[4] 'Sim3_4k_6k'
+[5] 'NMI97348_6k'
+[6] 'Sim3_4k_noindels_6k'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=6 nsplits=11;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	86	 2 3,
+	100	 5,
+	99	 1 4 6,
+	100	 4,
+	100	 6,
+	100	 4 6,
+	100	 1,
+	14	 2 5,
+	1	 1 5,
+;
+END; [Splits]
+

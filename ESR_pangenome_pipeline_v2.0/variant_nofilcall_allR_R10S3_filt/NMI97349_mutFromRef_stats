@@ -1,0 +1,5 @@
+NMI97349_mutFromRef PASS
+9347 NMI97349_mutFromRefnofilt_aug_allR.pack_PASS.vcf
+NMI97349_mutFromRef PASS GT11
+9342 NMI97349_mutFromRefnofilt_aug_allR.pack_PASS_nohead_GT11.vcf
+5 NMI97349_mutFromRefnofilt_aug_allR.pack_GTerror.vcf

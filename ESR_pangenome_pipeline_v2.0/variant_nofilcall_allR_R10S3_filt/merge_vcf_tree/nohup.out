@@ -1,0 +1,180 @@
+Converting /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.fa (fasta) to file /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip
+Finished converting /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.fa to /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip (1 alignments)
+Output is now in /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip
+IQ-TREE multicore version 2.0.6 for Linux 64-bit built May 30 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    kscprod-bio2 (AVX2, FMA3, 503 GB RAM)
+Command: /iqtree-2.0.6-Linux/bin/iqtree2 -s /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip -nt 20 -B 2000 -alrt 2000
+Seed:    37807 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Tue Sep  6 14:21:25 2022
+Kernel:  AVX+FMA - 20 threads (72 CPU cores detected)
+
+Reading alignment file /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 6 sequences with 44665 columns, 3767 distinct patterns
+31604 parsimony-informative, 12525 singleton sites, 536 constant sites
+                     Gap/Ambiguity  Composition  p-value
+   1  Sim4_5k_6k             0.00%    passed     33.38%
+   2  Sim2_3k_6k             0.02%    passed     95.58%
+   3  NMI01191_6k            0.03%    passed     70.72%
+   4  Sim3_4k_6k             0.06%    passed     85.85%
+   5  NMI97348_6k            0.02%    passed     45.36%
+   6  Sim3_4k_noindels_6k    0.06%    passed     63.85%
+****  TOTAL                  0.03%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.004 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -338107.044
+2. Current log-likelihood: -338096.820
+3. Current log-likelihood: -338092.252
+4. Current log-likelihood: -338091.175
+5. Current log-likelihood: -338090.146
+Optimal log-likelihood: -338088.844
+Rate parameters:  A-C: 1.02584  A-G: 1.48345  A-T: 0.92645  C-G: 0.95126  C-T: 1.44632  G-T: 1.00000
+Base frequencies:  A: 0.237  C: 0.258  G: 0.260  T: 0.245
+Proportion of invariable sites: 0.000
+Gamma shape alpha: 122.356
+Parameters optimization took 5 rounds (0.024 sec)
+Time for fast ML tree search: 0.203 seconds
+
+NOTE: ModelFinder requires 36 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 44665) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         338086.314   17  676206.629   676206.642   676354.647
+  2  GTR+F+I       338086.265   18  676208.530   676208.545   676365.255
+  3  GTR+F+G4      338086.412   18  676208.825   676208.840   676365.550
+  4  GTR+F+I+G4    338086.488   19  676210.976   676210.993   676376.408
+  5  GTR+F+R2      338087.918   19  676213.836   676213.853   676379.268
+  6  GTR+F+R3      338087.247   21  676216.494   676216.514   676399.340
+ 14  SYM           338221.940   14  676471.881   676471.890   676593.778
+ 27  TVM+F         338086.946   16  676205.893   676205.905   676345.204
+ 40  TVMe          338222.003   13  676470.007   676470.015   676583.197
+ 53  TIM3+F        338091.347   15  676212.693   676212.704   676343.297
+ 66  TIM3e         338229.107   12  676482.215   676482.222   676586.698
+ 79  TIM2+F        338091.992   15  676213.984   676213.995   676344.588
+ 92  TIM2e         338228.770   12  676481.539   676481.546   676586.022
+105  TIM+F         338087.216   15  676204.433   676204.444   676335.037
+118  TIMe          338227.879   12  676479.758   676479.765   676584.241
+131  TPM3u+F       338092.043   14  676212.086   676212.096   676333.983
+144  TPM3+F        338092.007   14  676212.014   676212.024   676333.912
+157  TPM2u+F       338092.669   14  676213.337   676213.347   676335.234
+170  TPM2+F        338092.669   14  676213.337   676213.347   676335.234
+183  K3Pu+F        338087.902   14  676203.804   676203.814   676325.702
+196  K3P           338227.984   11  676477.969   676477.975   676573.745
+209  TN+F          338091.989   14  676211.978   676211.987   676333.875
+222  TNe           338231.801   11  676485.602   676485.608   676581.379
+235  HKY+F         338092.676   13  676211.351   676211.359   676324.542
+248  K2P           338231.831   10  676483.661   676483.666   676570.730
+261  F81+F         338465.120   12  676954.239   676954.246   677058.722
+274  JC            338597.230   9   677212.460   677212.464   677290.823
+Akaike Information Criterion:           K3Pu+F
+Corrected Akaike Information Criterion: K3Pu+F
+Bayesian Information Criterion:         HKY+F
+Best-fit model: HKY+F chosen according to BIC
+
+All model information printed to /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.model.gz
+CPU time for ModelFinder: 20.934 seconds (0h:0m:20s)
+Wall-clock time for ModelFinder: 1.130 seconds (0h:0m:1s)
+Generating 2000 samples for ultrafast bootstrap (seed: 37807)...
+
+NOTE: 29 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -338092.676
+Optimal log-likelihood: -338092.675
+Rate parameters:  A-C: 1.00000  A-G: 1.49582  A-T: 1.00000  C-G: 1.00000  C-T: 1.49582  G-T: 1.00000
+Base frequencies:  A: 0.237  C: 0.258  G: 0.260  T: 0.245
+Parameters optimization took 1 rounds (0.002 sec)
+Computing ML distances based on estimated model parameters... 0.042 sec
+Computing BIONJ tree...
+0.003 seconds
+Log-likelihood of BIONJ tree: -338092.675
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 99 parsimony trees... 0.824 second
+Computing log-likelihood of 10 initial trees ... 0.011 seconds
+Current best score: -338092.675
+
+Do NNI search on 11 best initial trees
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+Iteration 10 / LogL: -338565.060 / Time: 0h:0m:1s
+Finish initializing candidate tree set (12)
+Current best tree score: -338092.675 / CPU time: 1.120
+Number of iterations: 11
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 20 / LogL: -338169.930 / Time: 0h:0m:2s
+UPDATE BEST LOG-LIKELIHOOD: -338092.675
+Iteration 30 / LogL: -338190.302 / Time: 0h:0m:2s (0h:0m:5s left)
+Iteration 40 / LogL: -338147.583 / Time: 0h:0m:2s (0h:0m:4s left)
+UPDATE BEST LOG-LIKELIHOOD: -338092.675
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+UPDATE BEST LOG-LIKELIHOOD: -338092.675
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+Iteration 50 / LogL: -338131.113 / Time: 0h:0m:2s (0h:0m:2s left)
+Log-likelihood cutoff on original alignment: -338114.229
+UPDATE BEST LOG-LIKELIHOOD: -338092.675
+Iteration 60 / LogL: -338092.675 / Time: 0h:0m:3s (0h:0m:2s left)
+UPDATE BEST LOG-LIKELIHOOD: -338092.675
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+Iteration 70 / LogL: -338123.536 / Time: 0h:0m:3s (0h:0m:1s left)
+Iteration 80 / LogL: -338218.548 / Time: 0h:0m:3s (0h:0m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -338092.675
+UPDATE BEST LOG-LIKELIHOOD: -338092.675
+Iteration 90 / LogL: -338136.624 / Time: 0h:0m:3s (0h:0m:0s left)
+WARNING: NNI search needs unusual large number of steps (6) to converge!
+Iteration 100 / LogL: -338092.675 / Time: 0h:0m:3s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -338114.228
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.994
+TREE SEARCH COMPLETED AFTER 101 ITERATIONS / Time: 0h:0m:3s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -338092.675
+Optimal log-likelihood: -338092.675
+Rate parameters:  A-C: 1.00000  A-G: 1.49582  A-T: 1.00000  C-G: 1.00000  C-T: 1.49582  G-T: 1.00000
+Base frequencies:  A: 0.237  C: 0.258  G: 0.260  T: 0.245
+Parameters optimization took 1 rounds (0.002 sec)
+BEST SCORE FOUND : -338092.675
+
+Testing tree branches by SH-like aLRT with 2000 replicates...
+0.149 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.splits.nex
+Total tree length: 5.637
+
+Total number of iterations: 101
+CPU time used for tree search: 57.445 sec (0h:0m:57s)
+Wall-clock time used for tree search: 3.019 sec (0h:0m:3s)
+Total CPU time used: 66.237 sec (0h:1m:6s)
+Total wall-clock time used: 4.088 sec (0h:0m:4s)
+
+Computing bootstrap consensus tree...
+Reading input file /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.splits.nex...
+6 taxa and 11 splits.
+Consensus tree written to /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.contree
+Reading input trees file /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.contree
+Log-likelihood of consensus tree: -338092.675
+
+Analysis results written to: 
+  IQ-TREE report:                /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.iqtree
+  Maximum-likelihood tree:       /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.treefile
+  Likelihood distances:          /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.splits.nex
+  Consensus tree:                /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.contree
+  Screen log file:               /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs.phylip.log
+
+Date and Time: Tue Sep  6 14:21:30 2022

@@ -1,0 +1,5 @@
+NMI01191_mutFromRef_indel200Inv2 PASS
+8410 NMI01191_mutFromRef_indel200Inv2nofilt_aug_allR.pack_PASS.vcf
+NMI01191_mutFromRef_indel200Inv2 PASS GT11
+8408 NMI01191_mutFromRef_indel200Inv2nofilt_aug_allR.pack_PASS_nohead_GT11.vcf
+2 NMI01191_mutFromRef_indel200Inv2nofilt_aug_allR.pack_GTerror.vcf

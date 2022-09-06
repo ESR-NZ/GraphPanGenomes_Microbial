@@ -1,0 +1,197 @@
+{
+    "report_data_sources": {
+        "ODGI": {
+            "all_sections": {
+                "seqwish": "/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim_10k95/4Sim.fa.4393b2f.417fcdf.seqwish.og.stats.yaml",
+                "smooth": "/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim_10k95/4Sim.fa.4393b2f.417fcdf.9d98660.smooth.final.og.stats.yaml"
+            }
+        }
+    },
+    "report_general_stats_data": [],
+    "report_general_stats_headers": [],
+    "report_multiqc_command": "/opt/conda/envs/pggb_0.4.0_singularity/bin/multiqc 4Sim_10k95 -s -o 4Sim_10k95 -c 4Sim_10k95/multiqc_config.yaml",
+    "report_plot_data": {
+        "odgi_sum_of_path_nodes_distances_plot": {
+            "plot_type": "bar_graph",
+            "samples": [
+                [
+                    "seqwish",
+                    "smooth"
+                ],
+                [
+                    "seqwish",
+                    "smooth"
+                ]
+            ],
+            "datasets": [
+                [
+                    {
+                        "name": "Sum of distances: node space",
+                        "data": [
+                            5847.57,
+                            11.1364
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Sum of distances: nucleotide space",
+                        "data": [
+                            4412.76,
+                            8.14203
+                        ]
+                    }
+                ]
+            ],
+            "config": {
+                "id": "odgi_sum_of_path_nodes_distances_plot",
+                "title": "ODGI: Sum of path node distances",
+                "ylab": "Distance",
+                "yDecimals": false,
+                "cpswitch": false,
+                "logswitch": true,
+                "logswitch_active": true,
+                "data_labels": [
+                    {
+                        "name": "Node space",
+                        "ylab": "Distance"
+                    },
+                    {
+                        "name": "Nucleotide space",
+                        "ylab": "Distance"
+                    }
+                ],
+                "reversedStacks": true
+            }
+        },
+        "odgi_mean_links_length_plot": {
+            "plot_type": "bar_graph",
+            "samples": [
+                [
+                    "seqwish",
+                    "smooth"
+                ],
+                [
+                    "seqwish",
+                    "smooth"
+                ]
+            ],
+            "datasets": [
+                [
+                    {
+                        "name": "Mean links length: node space",
+                        "data": [
+                            2923.62,
+                            5.31961
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Mean links length: nucleotide space",
+                        "data": [
+                            335443.0,
+                            402.519
+                        ]
+                    }
+                ]
+            ],
+            "config": {
+                "id": "odgi_mean_links_length_plot",
+                "title": "ODGI: Mean links length",
+                "ylab": "Distance",
+                "yDecimals": false,
+                "cpswitch": false,
+                "logswitch": true,
+                "logswitch_active": true,
+                "data_labels": [
+                    {
+                        "name": "Node space",
+                        "ylab": "Distance"
+                    },
+                    {
+                        "name": "Nucleotide space",
+                        "ylab": "Distance"
+                    }
+                ],
+                "reversedStacks": true
+            }
+        }
+    },
+    "report_saved_raw_data": {
+        "multiqc_odgi_stats": {
+            "seqwish": {
+                "length": 2340904.0,
+                "nodes": 22157.0,
+                "edges": 29748.0,
+                "paths": 4.0,
+                "components": 1.0,
+                "A": 566617.0,
+                "C": 594784.0,
+                "T": 571883.0,
+                "G": 607620.0,
+                "N": 0.0,
+                "total": 37.0,
+                "unique": 37.0,
+                "mean_links_length_path": "all_paths",
+                "mean_links_length_in_node_space": 2923.62,
+                "mean_links_length_in_nucleotide_space": 335443,
+                "mean_links_length_num_links_considered": 59155,
+                "mean_links_length_num_gap_links_not_penalized": 0,
+                "sum_of_path_nodes_distances_path": "all_paths",
+                "sum_of_path_nodes_distances_in_node_space": 5847.57,
+                "sum_of_path_nodes_distances_in_nucleotide_space": 4412.76,
+                "sum_of_path_nodes_distances_nodes": 59159,
+                "sum_of_path_nodes_distances_nucleotides": 8995995,
+                "sum_of_path_nodes_distances_num_penalties": 10482,
+                "sum_of_path_nodes_distances_num_penalties_different_orientation": 0,
+                "pct_gc": 51.36494277424448,
+                "pct_n": 0.0
+            },
+            "smooth": {
+                "length": 2318882.0,
+                "nodes": 30141.0,
+                "edges": 40401.0,
+                "paths": 4.0,
+                "components": 1.0,
+                "A": 566198.0,
+                "C": 595415.0,
+                "T": 562333.0,
+                "G": 594936.0,
+                "N": 0.0,
+                "total": 0.0,
+                "unique": 0.0,
+                "mean_links_length_path": "all_paths",
+                "mean_links_length_in_node_space": 5.31961,
+                "mean_links_length_in_nucleotide_space": 402.519,
+                "mean_links_length_num_links_considered": 80172,
+                "mean_links_length_num_gap_links_not_penalized": 0,
+                "sum_of_path_nodes_distances_path": "all_paths",
+                "sum_of_path_nodes_distances_in_node_space": 11.1364,
+                "sum_of_path_nodes_distances_in_nucleotide_space": 8.14203,
+                "sum_of_path_nodes_distances_nodes": 80176,
+                "sum_of_path_nodes_distances_nucleotides": 8995995,
+                "sum_of_path_nodes_distances_num_penalties": 12816,
+                "sum_of_path_nodes_distances_num_penalties_different_orientation": 0,
+                "pct_gc": 51.332969939824444,
+                "pct_n": 0.0
+            }
+        }
+    },
+    "config_analysis_dir_abs": [
+        "/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim_10k95"
+    ],
+    "config_analysis_dir": [
+        "4Sim_10k95"
+    ],
+    "config_creation_date": "2022-08-23, 14:23 NZST",
+    "config_git_hash": null,
+    "config_intro_text": null,
+    "config_report_comment": null,
+    "config_report_header_info": null,
+    "config_script_path": "/opt/conda/envs/pggb_0.4.0_singularity/lib/python3.9/site-packages/multiqc/utils",
+    "config_short_version": "1.13.dev0",
+    "config_subtitle": null,
+    "config_title": null,
+    "config_version": "1.13.dev0"
+}

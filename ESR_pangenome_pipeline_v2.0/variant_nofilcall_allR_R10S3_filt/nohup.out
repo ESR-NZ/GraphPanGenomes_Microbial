@@ -1,0 +1,129 @@
+NC_017518_5Ksnps_indels200Inv2
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf NC_017518_5Ksnps_indels200Inv2nofilt_aug_allR.pack_PASS_head.vcf
+	--extract-FORMAT-info GT
+	--out NC_017518_5Ksnps_indels200Inv2nofilt_aug_allR.pack_PASS_head
+
+Warning: Expected at least 2 parts in FORMAT entry: ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GQ,Number=1,Type=Integer,Description="Genotype Quality, the Phred-scaled probability estimate of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GP,Number=1,Type=Float,Description="Genotype Probability, the log-scaled posterior probability of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=XD,Number=1,Type=Float,Description="eXpected Depth, background coverage as used for the Poisson model">
+After filtering, kept 1 out of 1 Individuals
+Outputting FORMAT information for GT
+After filtering, kept 11014 out of a possible 11014 Sites
+Run Time = 0.00 seconds
+NMI01191_mutFromRef_indel200Inv2
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf NMI01191_mutFromRef_indel200Inv2nofilt_aug_allR.pack_PASS_head.vcf
+	--extract-FORMAT-info GT
+	--out NMI01191_mutFromRef_indel200Inv2nofilt_aug_allR.pack_PASS_head
+
+Warning: Expected at least 2 parts in FORMAT entry: ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GQ,Number=1,Type=Integer,Description="Genotype Quality, the Phred-scaled probability estimate of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GP,Number=1,Type=Float,Description="Genotype Probability, the log-scaled posterior probability of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=XD,Number=1,Type=Float,Description="eXpected Depth, background coverage as used for the Poisson model">
+After filtering, kept 1 out of 1 Individuals
+Outputting FORMAT information for GT
+After filtering, kept 8410 out of a possible 8410 Sites
+Run Time = 0.00 seconds
+NMI01191_restart
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf NMI01191_restartnofilt_aug_allR.pack_PASS_head.vcf
+	--extract-FORMAT-info GT
+	--out NMI01191_restartnofilt_aug_allR.pack_PASS_head
+
+Warning: Expected at least 2 parts in FORMAT entry: ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GQ,Number=1,Type=Integer,Description="Genotype Quality, the Phred-scaled probability estimate of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GP,Number=1,Type=Float,Description="Genotype Probability, the log-scaled posterior probability of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=XD,Number=1,Type=Float,Description="eXpected Depth, background coverage as used for the Poisson model">
+After filtering, kept 1 out of 1 Individuals
+Outputting FORMAT information for GT
+After filtering, kept 9945 out of a possible 9945 Sites
+Run Time = 0.00 seconds
+NMI94348_mutFromRef_indel200Inv2
+Traceback (most recent call last):
+  File "/opt/conda/bin/conda", line 13, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.9/site-packages/conda/cli/main.py", line 142, in main
+    from ..activate import main as activator_main
+  File "/opt/conda/lib/python3.9/site-packages/conda/activate.py", line 22, in <module>
+    from .base.context import ROOT_ENV_NAME, context, locate_prefix_by_name
+  File "/opt/conda/lib/python3.9/site-packages/conda/base/context.py", line 25, in <module>
+    from .._vendor.appdirs import user_data_dir
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 982, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 925, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1414, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1386, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1541, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 123, in _path_join
+KeyboardInterrupt
+FATAL:   "vcftools": executable file not found in $PATH
+sed: can't read NMI94348_mutFromRef_indel200Inv2nofilt_aug_allR.pack_PASS_head.GT.FORMAT: No such file or directory
+rm: cannot remove ‘NMI94348_mutFromRef_indel200Inv2nofilt_aug_allR.pack_PASS_head.GT.FORMAT’: No such file or directory
+NMI97348_restart
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf NMI97348_restartnofilt_aug_allR.pack_PASS_head.vcf
+	--extract-FORMAT-info GT
+	--out NMI97348_restartnofilt_aug_allR.pack_PASS_head
+
+Warning: Expected at least 2 parts in FORMAT entry: ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GQ,Number=1,Type=Integer,Description="Genotype Quality, the Phred-scaled probability estimate of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GP,Number=1,Type=Float,Description="Genotype Probability, the log-scaled posterior probability of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=XD,Number=1,Type=Float,Description="eXpected Depth, background coverage as used for the Poisson model">
+After filtering, kept 1 out of 1 Individuals
+Outputting FORMAT information for GT
+After filtering, kept 11600 out of a possible 11600 Sites
+Run Time = 0.00 seconds
+NMI97349_mutFromRef
+
+VCFtools - 0.1.16
+(C) Adam Auton and Anthony Marcketta 2009
+
+Parameters as interpreted:
+	--vcf NMI97349_mutFromRefnofilt_aug_allR.pack_PASS_head.vcf
+	--extract-FORMAT-info GT
+	--out NMI97349_mutFromRefnofilt_aug_allR.pack_PASS_head
+
+Warning: Expected at least 2 parts in FORMAT entry: ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GQ,Number=1,Type=Integer,Description="Genotype Quality, the Phred-scaled probability estimate of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=GP,Number=1,Type=Float,Description="Genotype Probability, the log-scaled posterior probability of the called genotype">
+Warning: Expected at least 2 parts in FORMAT entry: ID=XD,Number=1,Type=Float,Description="eXpected Depth, background coverage as used for the Poisson model">
+After filtering, kept 1 out of 1 Individuals
+Outputting FORMAT information for GT
+After filtering, kept 9347 out of a possible 9347 Sites
+Run Time = 0.00 seconds
+NC_017518_5Ksnps_indels200Inv2
+NMI01191_mutFromRef_indel200Inv2
+NMI01191_restart
+NMI94348_mutFromRef_indel200Inv2
+NMI97348_restart
+NMI97349_mutFromRef
+NC_017518_5Ksnps_indels200Inv2
+NMI01191_mutFromRef_indel200Inv2
+NMI01191_restart
+NMI94348_mutFromRef_indel200Inv2
+NMI97348_restart
+NMI97349_mutFromRef
+NC_017518_5Ksnps_indels200Inv2
+NMI01191_mutFromRef_indel200Inv2
+NMI01191_restart
+NMI94348_mutFromRef_indel200Inv2
+NMI97348_restart
+NMI97349_mutFromRef

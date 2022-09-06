@@ -1,0 +1,12 @@
+Total alignments: 2000000
+Total primary: 2000000
+Total secondary: 0
+Total aligned: 1995500
+Total perfect: 589644
+Total gapless (softclips allowed): 1971948
+Total paired: 2000000
+Total properly paired: 1979682
+Insertions: 40188 bp in 17186 read events
+Deletions: 48105 bp in 17089 read events
+Substitutions: 2558990 bp in 2558990 read events
+Softclips: 1330102 bp in 35138 read events

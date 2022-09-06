@@ -1,0 +1,14 @@
+evaluation:
+  input-gfa:          4Sim.1k96.gfa
+  input-fasta:        /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/4Sim.fa
+  output-dir:         /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/pgge
+  beehave-r:          /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pgge/scripts/beehave.R
+  peanut-bed:         true
+  input-graph-names:  false
+splitfa:
+  seq-length:         100000
+  step:               5000
+evaluation-gaf-mode:
+  input-gaf:          false
+general:
+  threads:            16

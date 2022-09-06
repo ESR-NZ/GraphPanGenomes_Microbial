@@ -2,11 +2,10 @@
 #module load python/3.8.10
 module load vcftools/0.1.16
 
-cd /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt 
 
-input_data=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/*nofilt_aug_allR.pack.vcf
-input_folder=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt
-output_folder=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt
+input_data=./variant_nofilcall_allR_R10S3_filt/*nofilt_aug_allR.pack.vcf
+input_folder=./variant_nofilcall_allR_R10S3_filt
+output_folder=./variant_nofilcall_allR_R10S3_filt
 
 for f in $input_data
 

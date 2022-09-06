@@ -2,9 +2,9 @@
 
 module load vg/1.41.0
 
-data_gam=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/map2graph/*vgmap_4Sim.gam
-input=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3
-output=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_eachpath_R10S3
+data_gam=./map2graph/*vgmap_4Sim.gam
+input=./variant_nofilcall_allR_R10S3
+output=./variant_nofilcall_allR_eachpath_R10S3
 
 
 #graph_vg=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/vg_deconstruct/4Sim_1k96_256.vg

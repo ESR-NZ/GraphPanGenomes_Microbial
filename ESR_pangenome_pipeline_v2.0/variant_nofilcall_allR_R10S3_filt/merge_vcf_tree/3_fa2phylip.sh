@@ -1,6 +1,6 @@
 #!/bin/bash
 
-data=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs
+data=./variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs
 
 awk  '{gsub(" ","",$0); print;}' ${data}_rename_tab_fa >${data}.fa
 

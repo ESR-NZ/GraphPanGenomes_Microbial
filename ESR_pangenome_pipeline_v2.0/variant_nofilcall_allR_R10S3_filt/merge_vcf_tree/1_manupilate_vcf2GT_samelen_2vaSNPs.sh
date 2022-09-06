@@ -7,9 +7,8 @@ module load bcftools/1.8
 module load vcftools/0.1.16
 
 
-cd /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree
 
-input=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree
+input=./variant_nofilcall_allR_R10S3_filt/merge_vcf_tree
 
 for data in 6samples_merge_2.vcf 
 

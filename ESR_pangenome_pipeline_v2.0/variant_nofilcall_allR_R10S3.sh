@@ -1,13 +1,12 @@
 #!/bin/bash
 
 module load vg/1.41.0
-cd /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3
 
-data_gam=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/map2graph/*vgmap_4Sim.gam
-input=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/map2graph
-output=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3
-graph_vg=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/vg_deconstruct/4Sim_1k96_256.vg
-graph_xg=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/vg_deconstruct/4Sim_1k96_256.xg
+data_gam=./map2graph/*vgmap_4Sim.gam
+input=./map2graph
+output=./variant_nofilcall_allR_R10S3
+graph_vg=./vg_deconstruct/4Sim_1k96_256.vg
+graph_xg=./vg_deconstruct/4Sim_1k96_256.xg
 
 
 #compute snarls

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd /home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree
+cd ./variant_nofilcall_allR_R10S3_filt/merge_vcf_tree
 #mv 6samples_merge_2_samlen_2vaSNPsRf0.tab 6samplesSNPs
-data=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs
+data=./variant_nofilcall_allR_R10S3_filt/merge_vcf_tree/6samplesSNPs
 #transit colum and row
 awk '{for(i=1;i<=NF;i++)a[NR,i]=$i}END{for(i=1;i<=NF;i++){for(j=1;j<=NR;j++)printf a[j,i]" ";printf "\n"}}' $data>${data}.tr 
 tail -6 ${data}.tr >${data}.tr_sample

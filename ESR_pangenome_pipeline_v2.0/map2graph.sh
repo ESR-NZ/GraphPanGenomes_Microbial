@@ -1,11 +1,11 @@
 #!/bin/bash
 module load vg/1.41.0
 
-data=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/NGS_data/*_2k_5_2k_2k.wgsim_er0.005.R1.fq.gz
-input_folder=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/NGS_data
-output=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/map2graph
-index=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/vg_deconstruct/4Sim_1k96_256.gcsa
-basename=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/vg_deconstruct/4Sim_1k96_256
+data=./NGS_data/*_2k_5_2k_2k.wgsim_er0.005.R1.fq.gz
+input_folder=./NGS_data
+output=./map2graph
+index=./vg_deconstruct/4Sim_1k96_256.gcsa
+basename=./vg_deconstruct/4Sim_1k96_256
 
 for f in $data
 do

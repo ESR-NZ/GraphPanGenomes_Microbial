@@ -2,9 +2,9 @@
 
 module load bcftools/1.8
 
-input_data=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/*nofilt_aug_allR.pack_PASS_head_GT11.vcf 
-input_folder=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/
-output_folder=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_nofilcall_allR_R10S3_filt/merge_vcf_tree
+input_data=./variant_nofilcall_allR_R10S3_filt/*nofilt_aug_allR.pack_PASS_head_GT11.vcf 
+input_folder=./variant_nofilcall_allR_R10S3_filt/
+output_folder=./variant_nofilcall_allR_R10S3_filt/merge_vcf_tree
 
 for f in $input_data
 

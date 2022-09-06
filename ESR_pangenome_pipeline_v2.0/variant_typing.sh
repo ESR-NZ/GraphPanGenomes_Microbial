@@ -2,11 +2,11 @@
 
 module load vg/1.41.0
 
-data_gam=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/map2graph/*vgmap_4Sim.gam
-input=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/map2graph
-output=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/variant_typing
-graph_xg=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/vg_deconstruct/4Sim_1k96_256.xg
-snarls_file=/home/zyang/NGS/active/IPL/MENINGO/analysis/graph_genome/pipeline/vg_deconstruct/4Sim_1k96_256.xg.snarls
+data_gam=./map2graph/*vgmap_4Sim.gam
+input=./map2graph
+output=./variant_typing
+graph_xg=./vg_deconstruct/4Sim_1k96_256.xg
+snarls_file=./vg_deconstruct/4Sim_1k96_256.xg.snarls
 
 
 

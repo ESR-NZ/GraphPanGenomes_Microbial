@@ -19,3 +19,4 @@ Softwares used in this pipeline
 9) vcftools, https://github.com/vcftools/vcftools
 10) bcftools, https://github.com/samtools/bcftools
 11) minigraph-cactus pipeline for comparision:https://github.com/ComparativeGenomicsToolkit/cactus, https://github.com/ComparativeGenomicsToolkit/cactus/blob/master/doc/pangenome.md
+12) iqtree, https://github.com/iqtree/iqtree2, for phylogeny reconstruction 

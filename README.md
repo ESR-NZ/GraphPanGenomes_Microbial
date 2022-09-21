@@ -13,7 +13,7 @@ Softwares used in this pipeline
 3) samtools version 1.9, https://github.com/samtools/samtools. 
 4) pggb version 0.4.0, https://github.com/pangenome/pggb, for pangenome graph building based on all versus all alignment of sequences. 
 5) pgge https://github.com/pangenome/pgge, measures the reconstruction accuracy of a pangenome graph (in the variation graph model). Its goal is to give guidance in finding the best pangenome graph construction tool for a given input data and task. 
-6) odgi version 0.6.2, https://github.com/pangenome/odgi, provides a seht of tools ranging from graph building, manipulation, layouting, over graph statistics to graph visualization and gene annotation lift overs https://github.com/pangenome/odgi 
+6) odgi version 0.6.2, https://github.com/pangenome/odgi, provides a set of tools ranging from graph building, manipulation, layouting, over graph statistics to graph visualization and gene annotation lift overs https://github.com/pangenome/odgi 
 7) vg from version 1.41.0, https://github.com/vgteam/vg, provides computational methods for creating and manipulating of genome variation graphs.
 8) gfaestus, https://github.com/chfi/gfaestus, to view the graphs in 2D 
 9) vcftools, https://github.com/vcftools/vcftools
